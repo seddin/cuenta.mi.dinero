@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #EFF0F0;
+    display: grid;
+    place-items: center;
+    padding: 4% 0 0 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.app {
+    width: 85%;
+    min-height: 100px;
+    max-width: 400px;
+}
+
+.top_menu, .section {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    place-items: center;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.green_emoji {
+    color: green;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.blue_txt {
+    color: royalblue;
+}
+
+.mt_40 {
+    margin-top: 40px;
+}
+
+.arrow {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    transition: all .3s ease-out;
+}
+
+.arrow i {
+    transition: all .3s ease-out;
+}
+
+.bg_red {
+    background-color: #FF4C4C;
+}
+
+.bg_green {
+    background-color: #4CC94C;
+}
+
+#nuevo_mov:hover {
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
+.rotated {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.sel_none {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nuevo_mov {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    display: none;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+}
+
+.nuevo_mov button {
+    border: none;
+    background-color: #1919FF;
+    color: #fff;
+    font-size: 18px;
+}
