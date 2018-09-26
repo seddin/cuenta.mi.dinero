@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="app">
+    <div class="top_menu">
+        <div class="green_emoji"><i class="fas fa-lock"></i></div>
+        <div class="logo sel_none">https://cuenta.mi.<span class="blue_txt">dinero</span>/</div>
+        <div><i class="fas fa-bars"></i></div>
+    </div>
+
+    <div id="nuevo_mov">
+        <div class="section mt_40">
+            <div><i class="fas fa-dollar-sign"></i></div>
+            <div class="sel_none">Nuevo Movimiento</div>
+            <div class="arrow bg_green"><i class="fas fa-angle-down"></i></div>
+        </div>
+        <div class="nuevo_mov">
+            <!--<select name="" id=""></select>-->
+            <!--<input type="text">-->
+            <!--<input type="text">-->
+            <!--<input type="text">-->
+            <!--<input type="text">-->
+            <!--<button>Guardar</button>-->
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    $("#nuevo_mov .section").on('click', function () {
+        $("#nuevo_mov .arrow").toggleClass("bg_green").toggleClass("bg_red");
+        $("#nuevo_mov .arrow i").toggleClass("rotated");
+        $(".nuevo_mov").slideToggle(300);
+    });
+</script>
+</body>
+</html>
